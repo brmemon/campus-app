@@ -1,13 +1,10 @@
 import React from 'react'
-import Login from "./pages/Auth/Login"
-import SignUp from './pages/Auth/Signup'
-
+import Login from './pages/Login/page'
+import VerifyEmail from './pages/VerifyEmail/VerifyEmail'
 const page = () => {
   return (
-    <div style={{maxWidth:"1440px", margin:"auto"}}>
-      <Login />
-      {/* <SignUp/> */}
-    </div>
+    // <Login />
+    <VerifyEmail />
   )
 }
 

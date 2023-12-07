@@ -8,20 +8,6 @@ const Input = ({ className, type, label }) => {
         label={label}
         type={type}
         className={className}
-      // sx={{
-      //   borderRadius:"50px"
-      // }}
-      //   inputProps={{
-      //     style: {
-      //       borderRadius: 999
-      //     }
-      //   }}
-      // inputProps={{
-      //   style: {
-      //     borderRadius: "100px"
-      //   }
-      // }}
-      // sx={{bor}}
       />
     </div>
   )
