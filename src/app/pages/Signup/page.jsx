@@ -1,8 +1,6 @@
 "use client"
-import Image from 'next/image'
 import React, { useState } from 'react'
 import { Button, MenuItem, Select } from '@mui/material'
-import vector from "../../Components/Assets/Vector14.png"
 import Input from '@/app/Components/Input'
 import { FaRegEyeSlash, FaRegHandshake } from "react-icons/fa6";
 import Link from 'next/link'
@@ -10,6 +8,7 @@ import { IoEyeOutline } from 'react-icons/io5'
 import "./style.scss"
 import StudentRequirment from './studentRequirment'
 import LSF_Container from '../SideContainers/LSF_Container'
+import MainButton from '@/app/Components/MainButton';
 
 const Signup = () => {
     const [userType, setUserType] = useState('');
@@ -22,8 +21,6 @@ const Signup = () => {
     const handleChange = (event) => {
         setUserType(event.target.value);
     };
-
-
 
     return (
         <div className='container'>
@@ -71,12 +68,13 @@ const Signup = () => {
                         </Select>
                     </div>
                     {(userType === 'student') ?
-                    <StudentRequirment userType={userType} />
-                    :
-                    false}
+                        <StudentRequirment userType={userType} />
+                        :
+                        false}
                 </div>
-
-                <Button className='login_button'>Sign Up</Button>
+                <div className='MainButton_Parent'>
+                    <MainButton text={"Sign Up"} />
+                </div>
                 <p>
                     Already have an account?
                     <Link

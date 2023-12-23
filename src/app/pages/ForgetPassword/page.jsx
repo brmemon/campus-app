@@ -1,12 +1,10 @@
-import Image from 'next/image'
 import React from 'react'
-import vector from "../../Components/Assets/Vector14.png"
 import "./style.scss"
 import { Button } from '@mui/material'
 import Input from '@/app/Components/Input'
-import { FaRegHandshake } from "react-icons/fa6";
 import Link from 'next/link'
 import LSF_Container from '../SideContainers/LSF_Container'
+import MainButton from '@/app/Components/MainButton'
 
 const Forgetpassword = () => {
   return (
@@ -17,11 +15,13 @@ const Forgetpassword = () => {
         <div className='forget_input' >
           <Input className={"input"} label="Email" />
         </div>
-        <Button className='login_button'>Forgot Password</Button>
+        <div className='MainButton_Parent'>
+          <MainButton text={"Forgot Password"} />
+        </div>
         <Button>
-          <Link 
-          className='link'
-          href="/pages/Login"
+          <Link
+            className='link'
+            href="/pages/Login"
           >Back To Login
           </Link>
         </Button>

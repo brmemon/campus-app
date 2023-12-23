@@ -1,12 +1,13 @@
 "use client"
 import React, { useState } from 'react';
 import './style.scss';
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 import Input from '@/app/Components/Input';
 import { FaRegEyeSlash, FaRegHandshake } from 'react-icons/fa6';
 import { IoEyeOutline } from "react-icons/io5";
 import Link from 'next/link';
 import LSF_Container from '../SideContainers/LSF_Container';
+import MainButton from '@/app/Components/MainButton';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -39,7 +40,9 @@ const Login = () => {
             Forgot Password?
           </Link>
         </span>
-        <Button className="login_button">Login</Button>
+        <div className='MainButton_Parent'>
+          <MainButton text={"Login"} />
+        </div>
         <p>
           Don't Have An Account
           <Link
