@@ -7,49 +7,68 @@
 .Main_sideNavbar {
     display: flex;
     height: 100vh;
-    // width: 100%;
-}
 
-.Side_Navbar {
-    padding-top: 20px;
-    align-items: center;
-    display: flex;
-    padding: 20px 50px 0px 50px;
-    // width: 100%;
-    // min-width: 500px;
-    background-color: #00A9FD;
-    text-align: center;
-    flex-direction: column;
-}
+    .Side_Navbar {
+        width: 25%;
+        padding-top: 20px;
+        align-items: center;
+        display: flex;
+        padding: 20px 50px 0px 50px;
+        background-color: #00A9FD;
+        text-align: center;
+        flex-direction: column;
 
-.campus_heading {
-    font-size: 50px;
-    color: white;
-    padding: 0px 0px 15px 0px;
-}
-
-.map_menu {
-    color: white;
-    padding: 5px 0px;
-}
-
-// .map_menu:hover {
-// }
+    }
 
 
-.main_mapmenu {
-    background-color: aliceblue;
-    color: #00A9FD;
-    font-size: 20px;
-}
+    .campus_heading {
+        font-size: 50px;
+        color: white;
+        padding: 0px 0px 15px 0px;
+    }
 
-.main_mapmenu:hover {
-    border: 2px solid #00A9FD;
-    background-color: white;
-    color: #00A9FD;
-}
+    .main_mapmenu {
+        background-color: aliceblue;
+        color: #00A9FD;
+        border: 2px solid #00A9FD;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        padding-left: 20px;
+        justify-content: flex-end;
+    }
 
-.campus_logo {
-    font-size: 50px;
-    color: white;
+    .main_mapmenu:hover {
+        background-color: white;
+        color: #00A9FD;
+        border: 2px solid #00A9FD;
+    }
+
+    .map_menu {
+        padding-left: 20px;
+        background-color: #00A9FD;
+        color: white;
+        border: 2px solid #00A9FD;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        justify-content: flex-end;
+        // padding: 5px 0px;
+    }
+
+    .map_menu:hover {
+        border: 2px solid #00A9FD;
+        background-color: white;
+        color: #00A9FD;
+    }
+
+    .campus_logo {
+        font-size: 70px;
+        color: white;
+    }
+
+    .children {
+        width: 75%;
+        background-color: #00A9FD;
+    }
 }

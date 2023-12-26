@@ -3,32 +3,31 @@ import { CgProfile } from "react-icons/cg";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import { MdBlockFlipped } from "react-icons/md";
-import { IoIosLogOut } from "react-icons/io";
 
 export const Sidenavbar = [
     {
         route: "Dashboard"
         , path: '/dashboard'
-        , icon: <MdOutlineDashboardCustomize />
+        , icon: <MdOutlineDashboardCustomize size={"22px"} />
     },
     {
         route: "Profile"
         , path: '/profile'
-        , icon: <CgProfile />
+        , icon: <CgProfile size={"22px"} />
     },
     {
         route: "Verified"
         , path: '/verified'
-        , icon: <MdOutlineVerifiedUser />
+        , icon: <MdOutlineVerifiedUser size={"22px"} />
     },
     {
         route: "UnVerified"
         , path: '/unverified'
-        , icon: <AiOutlineSecurityScan />
+        , icon: <AiOutlineSecurityScan size={"22px"} />
     },
     {
         route: "Block"
         , path: '/block'
-        , icon: <MdBlockFlipped />
+        , icon: <MdBlockFlipped size={"22px"} />
     }
 ]

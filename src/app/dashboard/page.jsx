@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import CustomLayout from '../Components/Layout'
+import "./style.scss"
 
 const Dashboard = () => {
 
@@ -10,14 +11,14 @@ const Dashboard = () => {
 
   useEffect(() => {
     setPathname(window.location.pathname)
-  }, [window !== undefined && window.location.pathname])
+  }, [typeof window !== undefined // &&  window.location.pathname
+  ])
   return (
-    <div style={{ display: "flex", backgroundColor: "#00A9FD" }}>
-      <CustomLayout pathname={pathname} />
-      <div style={{ borderBottomLeftRadius: "40px", borderTopLeftRadius: "40px", backgroundColor: "white", width: "100%", paddingLeft: "40px" }}>
+    <CustomLayout pathname={pathname} >
+      <div className='all_path'>
         <h1>Dashboard</h1>
       </div>
-    </div>
+    </CustomLayout>
   )
 }
 

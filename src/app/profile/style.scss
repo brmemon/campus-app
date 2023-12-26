@@ -1,0 +1,71 @@
+.profile {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .avater_and_name {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        .avater_pencilicon {
+            position: relative;
+        }
+
+        .avater {
+            border-style: double;
+            width: 100px;
+            background-color: #00A9FD;
+            // position: relative;
+            height: 100px;
+            font-size: 50px;
+        }
+
+        .pencil_icon {
+            font-size: 17px;
+            right: 17px;
+            cursor: pointer;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .avater_name {
+            font-size: 17px;
+            text-decoration: underline;
+            text-decoration-color: #00A9FD;
+        }
+    }
+
+    .profile_input {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .input_profile {
+            width: 280px;
+        }
+
+
+    }
+
+    .profile_radio {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .parent_profilebutton {
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+
+        .profile_button {
+            width: 50%;
+        }
+    }
+
+
+
+}
