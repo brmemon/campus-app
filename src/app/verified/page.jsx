@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import CustomLayout from '../Components/Layout'
 import "./style.scss"
-import Tables from '../Components/Table/page'
-
+import MyTable from '../Components/Table/page'
+import { table } from '../Helper/constant'
 
 const Verified = () => {
   const [pathname, setPathname] = useState()
@@ -16,7 +16,7 @@ const Verified = () => {
     <div>
       <CustomLayout pathname={pathname}>
         <div className='all_path'>
-          <Tables Verifey={"Block"} />
+          <MyTable tableHeader={table} />
         </div>
       </CustomLayout>
     </div>

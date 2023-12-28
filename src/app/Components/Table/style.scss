@@ -1,0 +1,27 @@
+th {
+    color: white !important;
+}
+
+tr {
+    border-bottom: 2px solid #00A9FD;
+}
+
+td {
+    border: 1px solid #00A9FD;
+}
+
+.tablecontainer_class {
+    box-shadow: 1px 1px 7px #000000;
+    border-radius: 7px;
+    margin-top: 25px;
+
+    .table_class {
+        min-width: 650px;
+        border-color: rgb(0, 140, 255);
+
+        .table_head_class {
+            background-color: #00A9FD;
+            border-radius: 10px;
+        }
+    }
+}

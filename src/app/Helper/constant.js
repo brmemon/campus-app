@@ -31,3 +31,7 @@ export const Sidenavbar = [
         , icon: <MdBlockFlipped size={"22px"} />
     }
 ]
+
+export const table = [
+    "Name", "Role", "Email", "Detail", "Status"
+]

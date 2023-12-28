@@ -21,19 +21,14 @@ const CustomLayout = ({ icon, children }) => {
             <div className='Side_Navbar'>
                 <FaRegHandshake className="campus_logo" />
                 <h1 className='campus_heading'>Campus</h1>
-                {Sidenavbar.map((item) => {
-                    console.log(item.icon + "icon")
-                    return (
-                        <MainButton
-                            key={item.route}
-                            className={item?.path === pathname ? "main_mapmenu" : "map_menu"}
-                            onClick={() => router.push(item?.path)}
-                            icon={item?.icon}
-                            text={item?.route}
-                        />
-                    )
-
-                }
+                {Sidenavbar.map((item) =>
+                    <MainButton
+                        key={item.route}
+                        className={item?.path === pathname ? "main_mapmenu" : "map_menu"}
+                        onClick={() => router.push(item?.path)}
+                        icon={item?.icon}
+                        text={item?.route}
+                    />
                 )}
             </div>
             <div className='children'>
