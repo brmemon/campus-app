@@ -8,7 +8,7 @@ const MyTable = ({ tableHeader }) => {
             <TableContainer className='tablecontainer_class'>
                 <Table
                     className='table_class'>
-                    <TableHead >
+                    <TableHead>
                         <TableRow className='table_head_class'>
                             {tableHeader.map((item) =>
                                 <TableCell>

@@ -1,13 +1,12 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { Sidenavbar } from '../../Helper/constant'
 import "./style.scss"
 import { useRouter } from 'next/navigation'
 import { FaRegHandshake } from 'react-icons/fa6'
 import MainButton from '../MainButton'
-import { Button } from '@mui/material'
+import { AdminNavbarData } from '@/app/Helper/constant'
 
-const CustomLayout = ({ icon, children }) => {
+const CustomLayout = ({ children, SideNavbarData }) => {
     const router = useRouter()
     const [pathname, setPathname] = useState()
 
@@ -16,12 +15,13 @@ const CustomLayout = ({ icon, children }) => {
         setPathname(window.location.pathname)
     }, [typeof window !== undefined // && window.location.pathname
     ])
+    console.log(SideNavbarData, "data")
     return (
         <div className='Main_sideNavbar'>
             <div className='Side_Navbar'>
                 <FaRegHandshake className="campus_logo" />
                 <h1 className='campus_heading'>Campus</h1>
-                {Sidenavbar.map((item) =>
+                {SideNavbarData.map((item) =>
                     <MainButton
                         key={item.route}
                         className={item?.path === pathname ? "main_mapmenu" : "map_menu"}

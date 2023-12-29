@@ -1,66 +1,75 @@
-.profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.all_path {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    padding: 1px 45px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 
-    .avater_and_name {
-        margin-bottom: 35px;
-        margin-top: 25px;
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-        .avater_pencilicon {
-            position: relative;
+        .avater_and_name {
+            margin-bottom: 35px;
+            margin-top: 25px;
+
+            .avater_pencilicon {
+                position: relative;
+            }
+
+            .avater {
+                border-style: double;
+                width: 100px;
+                background-color: #00A9FD;
+                height: 100px;
+                font-size: 50px;
+            }
+
+            .pencil_icon {
+                font-size: 17px;
+                right: 17px;
+                cursor: pointer;
+                bottom: 0;
+                position: absolute;
+            }
+
+            .avater_name {
+                font-size: 17px;
+                text-decoration: underline;
+                text-decoration-color: #00A9FD;
+            }
         }
 
-        .avater {
-            border-style: double;
-            width: 100px;
-            background-color: #00A9FD;
-            height: 100px;
-            font-size: 50px;
+        .profile_input {
+            .input_profile {
+                width: 350px;
+                margin-bottom: 15px;
+            }
         }
 
-        .pencil_icon {
-            font-size: 17px;
-            right: 17px;
-            cursor: pointer;
-            bottom: 0;
-            position: absolute;
+        .gender_class {
+            font-size: 15px;
+            text-align: start;
+            color: #00A9FD;
         }
 
-        .avater_name {
-            font-size: 17px;
-            text-decoration: underline;
-            text-decoration-color: #00A9FD;
+        .profile_radio {
+            gap: 10px;
+            flex-direction: row;
         }
+
+        .parent_profilebutton {
+            padding-top: 15px;
+            width: 75%;
+
+            .profile_button {
+                width: 50%;
+            }
+        }
+
     }
-
-    .profile_input {
-        .input_profile {
-            width: 350px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .gender_class {
-        font-size: 15px;
-        text-align: start;
-        color: #00A9FD;
-    }
-
-    .profile_radio {
-        gap: 10px;
-        flex-direction: row;
-    }
-
-    .parent_profilebutton {
-        padding-top: 15px;
-        width: 75%;
-
-        .profile_button {
-            width: 50%;
-        }
-    }
-
 }

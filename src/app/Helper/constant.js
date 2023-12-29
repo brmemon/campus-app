@@ -4,12 +4,7 @@ import { MdOutlineVerifiedUser } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import { MdBlockFlipped } from "react-icons/md";
 
-export const Sidenavbar = [
-    {
-        route: "Dashboard"
-        , path: '/dashboard'
-        , icon: <MdOutlineDashboardCustomize size={"22px"} />
-    },
+export const AdminNavbarData = [
     {
         route: "Profile"
         , path: '/profile'
@@ -30,6 +25,49 @@ export const Sidenavbar = [
         , path: '/block'
         , icon: <MdBlockFlipped size={"22px"} />
     }
+]
+
+
+export const CompanyNavbarData = [
+    {
+        route: "Profile"
+        , path: '/profile'
+        , icon: <CgProfile size={"22px"} />
+    },
+    {
+        route: "JobsPost"
+        , path: '/jobspost'
+        , icon: <MdOutlineVerifiedUser size={"22px"} />
+    },
+    {
+        route: "PostedJobs"
+        , path: '/postedjobs'
+        , icon: <AiOutlineSecurityScan size={"22px"} />
+    },
+    {
+        route: "StudentApplied"
+        , path: '/studentapplied'
+        , icon: <MdBlockFlipped size={"22px"} />
+    }
+]
+
+
+export const StudentNavbarData = [
+    {
+        route: "Profile"
+        , path: '/profile'
+        , icon: <CgProfile size={"22px"} />
+    },
+    {
+        route: "Jobs"
+        , path: '/jobs'
+        , icon: <CgProfile size={"22px"} />
+    },
+    {
+        route: "AppliedJobs"
+        , path: '/appliedjobs'
+        , icon: <AiOutlineSecurityScan size={"22px"} />
+    },
 ]
 
 export const table = [

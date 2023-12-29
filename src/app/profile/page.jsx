@@ -6,6 +6,7 @@ import { PiNotePencilLight } from "react-icons/pi";
 import "./style.scss"
 import Input from '../Components/Input';
 import MainButton from '../Components/MainButton';
+import { AdminNavbarData } from '../Helper/constant';
 
 const Profile = () => {
   const [pathname, setPathname] = useState()
@@ -15,7 +16,7 @@ const Profile = () => {
   }, [typeof window !== undefined])
   return (
     <div>
-      <CustomLayout pathname={pathname}>
+      <CustomLayout SideNavbarData={AdminNavbarData} pathname={pathname}>
         <div className='all_path'>
           <div className='profile'>
             <div className='avater_and_name'>
@@ -27,7 +28,7 @@ const Profile = () => {
             </div>
 
             <div className='profile_input'>
-              <Input label={"Raza123@gmail.com"} className='input_profile'disabled={true} />
+              <Input label={"Raza123@gmail.com"} className='input_profile' disabled={true} />
               <Input label={"Name"} className='input_profile' />
               <p className='gender_class'>Gender:</p>
             </div>
