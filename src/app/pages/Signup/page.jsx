@@ -6,7 +6,7 @@ import { FaRegEyeSlash, FaRegHandshake } from "react-icons/fa6";
 import Link from 'next/link'
 import { IoEyeOutline } from 'react-icons/io5'
 import "./style.scss"
-import StudentRequirment from './studentRequirment/.jsx'
+import StudentRequirment from './StudentRequirment.jsx'
 import LSF_Container from '../SideContainers/LSF_Container'
 import MainButton from '@/app/Components/MainButton';
 

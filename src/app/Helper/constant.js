@@ -3,6 +3,7 @@ import { CgProfile } from "react-icons/cg";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import { MdBlockFlipped } from "react-icons/md";
+import { CiChat2 } from "react-icons/ci";
 
 export const AdminNavbarData = [
     {
@@ -47,7 +48,7 @@ export const CompanyNavbarData = [
     {
         route: "StudentApplied"
         , path: '/studentapplied'
-        , icon: <MdBlockFlipped size={"22px"} />
+        , icon: <CiChat2 size={"22px"} />
     }
 ]
 
