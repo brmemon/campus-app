@@ -11,7 +11,7 @@ const MyTable = ({ tableHeader }) => {
                     <TableHead>
                         <TableRow className='table_head_class'>
                             {tableHeader.map((item) =>
-                                <TableCell>
+                                <TableCell key={item}>
                                     <p className='tablecell_class'>{item}</p>
                                 </TableCell>
                             )}
@@ -35,7 +35,7 @@ const MyTable = ({ tableHeader }) => {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </div>
+        </div >
     )
 }
 
