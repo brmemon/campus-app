@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import CustomLayout from '../Components/Layout'
 import "./style.scss"
 import MyTable from '../Components/Table/page'
-import { CompanyNavbarData, StudentNavbarData, table } from '../Helper/constant'
+import { StudentNavbarData, table } from '../Helper/constant'
 
 const AppliedJobs = () => {
   const [pathname, setPathname] = useState()
@@ -11,7 +11,7 @@ const AppliedJobs = () => {
   useEffect(() => {
     setPathname(window.location.pathname)
   }, [typeof window !== undefined])
-
+// console.log(SideNavbarData, "okay")
   return (
     <div>
       <CustomLayout SideNavbarData={StudentNavbarData} pathname={pathname}>

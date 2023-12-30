@@ -3,6 +3,7 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from
 import "./style.scss"
 
 const MyTable = ({ tableHeader }) => {
+    console.log(tableHeader, "nice")
     return (
         <div>
             <TableContainer className='tablecontainer_class'>

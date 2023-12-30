@@ -4,7 +4,6 @@ import "./style.scss"
 import { useRouter } from 'next/navigation'
 import { FaRegHandshake } from 'react-icons/fa6'
 import MainButton from '../MainButton'
-import { AdminNavbarData } from '@/app/Helper/constant'
 
 const CustomLayout = ({ children, SideNavbarData }) => {
     const router = useRouter()
@@ -15,6 +14,7 @@ const CustomLayout = ({ children, SideNavbarData }) => {
         setPathname(window.location.pathname)
     }, [typeof window !== undefined // && window.location.pathname
     ])
+    console.log(SideNavbarData , "error")
     return (
         <div className='Main_sideNavbar'>
             <div className='Side_Navbar'>

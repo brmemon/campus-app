@@ -16,7 +16,8 @@ const Profile = () => {
   }, [typeof window !== undefined])
   return (
     <div>
-      <CustomLayout SideNavbarData={AdminNavbarData} pathname={pathname}>
+      <CustomLayout SideNavbarData={AdminNavbarData} pathname={pathname}
+      >
         <div className='all_path'>
           <div className='profile'>
             <div className='avater_and_name'>
