@@ -4,6 +4,8 @@ import "./style.scss"
 import { useRouter } from 'next/navigation'
 import { FaRegHandshake } from 'react-icons/fa6'
 import MainButton from '../MainButton'
+import Image from 'next/image'
+import avater from "../Assets/profile2.png"
 
 const CustomLayout = ({ children, SideNavbarData }) => {
     const router = useRouter()
@@ -18,8 +20,14 @@ const CustomLayout = ({ children, SideNavbarData }) => {
     return (
         <div className='Main_sideNavbar'>
             <div className='Side_Navbar'>
-                <FaRegHandshake className="campus_logo" />
-                <h1 className='campus_heading'>Campus</h1>
+                <div className='logo_heading'>
+                    <FaRegHandshake className="campus_logo" />
+                    <h1 className='campus_heading'>Campus App</h1>
+                </div>
+                <div className='avater_div'>
+                    <Image src={avater} className='navbar_avater' alt='Avater' />
+                    <p className='user_name'>Bilal Raza</p>
+                </div>
                 {SideNavbarData.map((item) =>
                     <MainButton
                         key={item.route}

@@ -12,6 +12,7 @@ const Forgetpassword = () => {
       <LSF_Container />
       <div className='sub_container_two'>
         <h1 className='login_logo'>Forgot Password</h1>
+        <h2 className='login_welcome'>Get Back Your Acount Quickly And Easily</h2>
         <div className='forget_input' >
           <Input className={"input"} label="Email" />
         </div>

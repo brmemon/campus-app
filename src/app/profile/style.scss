@@ -22,9 +22,11 @@
             }
 
             .avater {
-                border-style: double;
+                // border-style: double;
                 width: 100px;
-                background-color: #00A9FD;
+                border-radius: 50px;
+                // color: #00A9FD !important;
+                // background-color: #00A9FD;
                 height: 100px;
                 font-size: 50px;
             }

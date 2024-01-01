@@ -18,8 +18,7 @@ const LSF_Container = () => {
         <FaRegHandshake className="campus_logo" />
         <h1 className="campus_text">Campus App</h1>
         <p className="campus_para">
-          "Revolutionize your campus hiring experience with our cutting-edge recruitment app! Streamline the process,
-          connect seamlessly with top talent effortlessly."
+          "Connecting Dreams, Bridging Careers: Your Gateway to Opportunities!"
         </p>
       </span>
     </div>

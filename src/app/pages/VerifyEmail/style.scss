@@ -8,39 +8,39 @@
     color: #00A9FD;
     display: flex;
     padding: 0px 10px;
-}
 
-.verify_email {
-    display: flex;
-    box-shadow: 1px 1px 5px #000000;
-    padding: 5px 8px;
-    border-radius: 10px;
-    width: 400px;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-}
+    .verify_email {
+        display: flex;
+        // border: 2px solid #00A9FD;
+        box-shadow: 0px 0px 3px 1px #00A9FD;
+        padding: 5px 8px;
+        border-radius: 10px;
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
 
-.campus_logos {
-    font-size: 100px;
-}
+    .campus_logos {
+        font-size: 100px;
+    }
 
-.email_text {
-    color: cadetblue;
-    font-size: 14px;
-    margin-bottom: 13px;
-}
+    .email_text {
+        color: cadetblue;
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
 
-.text {
-    font-size: 40px;
-    margin-bottom: 13px;
-}
+    .text {
+        font-size: 40px;
+        margin-bottom: 13px;
+    }
 
-.campus_logo {
-    font-size: 50px;
-}
+    .campus_logo {
+        font-size: 50px;
+    }
 
-.Button_Parent{
-    margin-bottom: 15px;
-    // width: 100%;
+    .Button_Parent {
+        width: 100%;
+    }
 }

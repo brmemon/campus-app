@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { Button, MenuItem, Select } from '@mui/material'
+import { Button, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
 import Input from '@/app/Components/Input'
 import { FaRegEyeSlash, FaRegHandshake } from "react-icons/fa6";
 import Link from 'next/link'
@@ -28,6 +28,7 @@ const Signup = () => {
 
             <div className='sub_container_two'>
                 <h1 className='login_logo'>Sign Up</h1>
+                <h2 className='login_welcome'>Welcome! Create Your Acount Now</h2>
 
                 <div className='Signup_input' >
                     <div className='login_input_display'>
@@ -57,15 +58,21 @@ const Signup = () => {
                         </div>
                     </div>
                     <div className='input_select'>
-                        <Select
-                            className={"select"}
-                            value={userType}
-                            onChange={handleChange}
-                        >
-                            <MenuItem value="student">Student</MenuItem>
-                            <MenuItem value="company">Company</MenuItem>
-                            <MenuItem value="admin">Admin</MenuItem>
-                        </Select>
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Select Role</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={userType}
+                                label="Select Role"
+                                onChange={handleChange}
+                                className={"select"}
+                            >
+                                <MenuItem value={"student"}>Student</MenuItem>
+                                <MenuItem value={"Company"}>Company</MenuItem>
+                                <MenuItem value={"admin"}>Admin</MenuItem>
+                            </Select>
+                        </FormControl>
                     </div>
                     {(userType === 'student') ?
                         <StudentRequirment userType={userType} />

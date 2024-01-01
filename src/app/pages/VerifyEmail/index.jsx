@@ -11,16 +11,16 @@ const VerifyEmail = () => {
                 <FaRegHandshake className="campus_logos" />
                 <h1 className="text">Campus App</h1>
                 <p className='email_text'>You are logged in as: bmemon123@gmail.com</p>
-                <p className='email_text'>Email Verification link has been sent to your registered email,Kindly check your email in spam / junk.</p>
+                <p className='email_text'>You are not verified yet! wait until you get verified by your Admin</p>
                 <div className='Button_Parent'>
                     <Link
                         className='link'
                         href="/pages/Login"
                     >
-                        <MainButton text={"Login"} />
+                        <MainButton text={"Log Out"} />
                     </Link>
                 </div>
-                <MainButton text={"Resend Email Verification Link"}></MainButton >
+                {/* <MainButton text={"Resend Email Verification Link"}></MainButton > */}
             </div>
         </div>
     )

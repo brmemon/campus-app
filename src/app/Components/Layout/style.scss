@@ -9,64 +9,86 @@
     height: 100vh;
 
     .Side_Navbar {
-        width: 25%;
-        padding-top: 20px;
-        align-items: center;
+        width: 21%;
+        padding-left: 25px;
         display: flex;
-        padding: 20px 50px 0px 50px;
         background-color: #00A9FD;
-        text-align: center;
         flex-direction: column;
+    }
+
+    .logo_heading {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 35px 0px 25px 0px;
+
+        .campus_heading {
+            font-size: 32px;
+            color: white;
+        }
+
+        .campus_logo {
+            font-size: 55px;
+            color: white;
+        }
 
     }
 
-
-    .campus_heading {
-        font-size: 50px;
+    .avater_div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
         color: white;
-        padding: 0px 0px 15px 0px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .navbar_avater {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 50px;
+        }
+
+        .user_name{
+            font-size: 15px;
+        }
     }
 
     .main_mapmenu {
-        width: 150px;
         background-color: aliceblue;
         color: #00A9FD;
         border: 2px solid #00A9FD;
         display: flex;
         flex-direction: row-reverse;
         gap: 10px;
-        padding-left: 20px;
-        justify-content: flex-end;
+        margin-bottom: 20px;
+        justify-content: start;
     }
 
     .main_mapmenu:hover {
         background-color: white;
         color: #00A9FD;
         border: 2px solid #00A9FD;
+        width: 100%;
     }
 
     .map_menu {
-        width: 150px;
-        padding-left: 20px;
+        justify-content: start;
         background-color: #00A9FD;
         color: white;
         border: 2px solid #00A9FD;
         display: flex;
         flex-direction: row-reverse;
         gap: 10px;
-        justify-content: flex-end;
-        // padding: 5px 0px;
+        margin-bottom: 20px;
     }
 
     .map_menu:hover {
         border: 2px solid #00A9FD;
         background-color: white;
         color: #00A9FD;
-    }
-
-    .campus_logo {
-        font-size: 70px;
-        color: white;
+        width: 100%;
     }
 
     .children {

@@ -7,6 +7,8 @@ import "./style.scss"
 import Input from '../Components/Input';
 import MainButton from '../Components/MainButton';
 import { AdminNavbarData } from '../Helper/constant';
+import Image from 'next/image';
+import avater from "../Components/Assets/profile2.png"
 
 const Profile = () => {
   const [pathname, setPathname] = useState()
@@ -22,7 +24,8 @@ const Profile = () => {
           <div className='profile'>
             <div className='avater_and_name'>
               <span className='avater_pencilicon'>
-                <Avatar className='avater' />
+                <Image src={avater} className='avater' alt='Avater' />
+                {/* <Avatar className='avater' /> */}
                 <PiNotePencilLight className='pencil_icon' />
               </span>
               <p className='avater_name'>Raza</p>
