@@ -14,7 +14,7 @@ const CustomLayout = ({ children, SideNavbarData }) => {
         setPathname(window.location.pathname)
     }, [typeof window !== undefined // && window.location.pathname
     ])
-    console.log(SideNavbarData , "error")
+    // console.log(SideNavbarData, "error")
     return (
         <div className='Main_sideNavbar'>
             <div className='Side_Navbar'>

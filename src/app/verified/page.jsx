@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import CustomLayout from '../Components/Layout'
 import "./style.scss"
-import MyTable from '../Components/Table/page'
-import { AdminNavbarData, table } from '../Helper/constant'
+import { AdminNavbarData, Table} from '../Helper/constant'
+import MyTable from '../Components/Table'
 
 const Verified = () => {
   const [pathname, setPathname] = useState()
@@ -16,7 +16,7 @@ const Verified = () => {
     <div>
       <CustomLayout SideNavbarData={AdminNavbarData} pathname={pathname}>
         <div className='all_path'>
-          <MyTable tableHeader={table} />
+          <MyTable tableData={Table} />
         </div>
       </CustomLayout>
     </div>
