@@ -12,15 +12,19 @@
         width: 21%;
         padding-left: 25px;
         display: flex;
-        background-color: #00A9FD;
+        background-color: #A66CFF;
         flex-direction: column;
     }
 
     .logo_heading {
         display: flex;
-        gap: 10px;
+        // width: 100%;
+        /* text-align: center; */
+        // gap: 10px;
         align-items: center;
-        padding: 35px 0px 25px 0px;
+        flex-direction: column;
+        padding: 25px 0; 
+        justify-content: center;
 
         .campus_heading {
             font-size: 32px;
@@ -50,34 +54,34 @@
             border-radius: 50px;
         }
 
-        .user_name{
+        .user_name {
             font-size: 15px;
         }
     }
 
     .main_mapmenu {
         background-color: aliceblue;
-        color: #00A9FD;
-        border: 2px solid #00A9FD;
+        color: #A66CFF;
+        border: 2px solid #A66CFF;
         display: flex;
         flex-direction: row-reverse;
         gap: 10px;
         margin-bottom: 20px;
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .main_mapmenu:hover {
         background-color: white;
-        color: #00A9FD;
-        border: 2px solid #00A9FD;
+        color: #A66CFF;
+        border: 2px solid #A66CFF;
         width: 100%;
     }
 
     .map_menu {
-        justify-content: start;
-        background-color: #00A9FD;
+        justify-content: flex-start;
+        background-color: #A66CFF;
         color: white;
-        border: 2px solid #00A9FD;
+        border: 2px solid #A66CFF;
         display: flex;
         flex-direction: row-reverse;
         gap: 10px;
@@ -85,14 +89,14 @@
     }
 
     .map_menu:hover {
-        border: 2px solid #00A9FD;
+        border: 2px solid #A66CFF;
         background-color: white;
-        color: #00A9FD;
+        color: #A66CFF;
         width: 100%;
     }
 
     .children {
-        width: 75%;
-        background-color: #00A9FD;
+        width: 79%;
+        background-color: #A66CFF;
     }
 }

@@ -1,0 +1,98 @@
+// .container {
+//     display: flex;
+//     width: 100%;
+
+//     .sub_container_one {
+//         width: 50%;
+//         overflow: hidden;
+//         height: 100vh;
+
+//         #myImage {
+//             width: 100%;
+//             height: 100vh;
+//         }
+
+//         .campus_logo_text {
+//             max-width: 600px;
+//             height: 100vh;
+//             text-align: center;
+//             justify-content: center;
+//             width: 44%;
+//             display: flex;
+//             position: absolute;
+//             top: 0;
+//             flex-direction: column;
+//             align-items: center;
+//         }
+
+//         .campus_logo {
+//             font-size: 75px;
+//             width: 100%;
+//             margin-bottom: 25px;
+//             color: white;
+//         }
+
+//         .campus_text {
+//             font-size: 50px;
+//             text-align: center;
+//             margin-bottom: 35px;
+//             color: white;
+//             font-style: oblique;
+//         }
+
+//         .campus_para {
+//             letter-spacing: 2px;
+//             line-height: 1.5;
+//             font-size: 15px;
+//             color: white;
+//         }
+//     }
+
+.main_container {
+    background-color: #A66CFF;
+    width: 60%;
+
+    .sub_container_two {
+        width: 60%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .login_logo {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: #A66CFF;
+            font-style: oblique;
+            font-style: normal;
+        }
+
+        .forget_input {
+            width: 65%;
+            margin-top: 35px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 0px 0px;
+            margin-bottom: 15px;
+            border-radius: 100px;
+        }
+
+        .login_button {
+            // margin: 20px 0px;
+            padding: 10px 10px;
+            background-color: #A66CFF;
+            color: white;
+            // width: 55%;
+            border-radius: 6px;
+        }
+
+        .login_button:active {
+            background-color: white;
+            color: #A66CFF;
+        }
+    }
+}

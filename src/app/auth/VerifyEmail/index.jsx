@@ -15,12 +15,12 @@ const VerifyEmail = () => {
                 <div className='Button_Parent'>
                     <Link
                         className='link'
-                        href="/pages/Login"
+                        href="/auth/Login"
                     >
                         <MainButton text={"Log Out"} />
                     </Link>
                 </div>
-                {/* <MainButton text={"Resend Email Verification Link"}></MainButton > */}
+                <MainButton text={"Resend Email Verification Link"}></MainButton >
             </div>
         </div>
     )

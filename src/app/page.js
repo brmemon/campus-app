@@ -1,14 +1,14 @@
 import React from 'react'
-import Login from './pages/Login/page'
-import VerifyEmail from './pages/VerifyEmail'
-// import Sidenavbar from './pages/Dashboard'
+import Login from './auth/Login/page'
+import VerifyEmail from './auth/VerifyEmail'
+// import Sidenavbar from './auth/Dashboard'
 // import CustomLayout from './Components/Layout'
 const page = () => {
   return (
     <>
-    <VerifyEmail />
+    {/* <VerifyEmail /> */}
    {/* <Sidenavbar /> */}
-   {/* <Login /> */}
+   <Login />
    {/* <CustomLayout /> */}
     </>
   )

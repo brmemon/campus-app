@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import CustomLayout from '../Components/Layout'
 import "./style.scss"
-import { StudentNavbarData, Table} from '../Helper/constant'
+import { StudentNavbarData, Table } from '../Helper/constant'
 import MyTable from '../Components/Table'
+import "../global.scss"
 
 const Jobs = () => {
   const [pathname, setPathname] = useState()
@@ -16,8 +17,8 @@ const Jobs = () => {
     <div>
       <CustomLayout SideNavbarData={StudentNavbarData} pathname={pathname}>
         <div className='all_path'>
+        <h1 className='top_heading'>Jobs</h1>
           <MyTable tableData={Table} />
-
         </div>
       </CustomLayout>
     </div>

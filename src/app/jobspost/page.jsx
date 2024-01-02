@@ -4,6 +4,7 @@ import CustomLayout from '../Components/Layout'
 import "./style.scss"
 import { CompanyNavbarData, Table } from '../Helper/constant'
 import MyTable from '../Components/Table'
+import "../global.scss"
 
 const JobsPost = () => {
     const [pathname, setPathname] = useState()
@@ -16,8 +17,8 @@ const JobsPost = () => {
         <div>
             <CustomLayout SideNavbarData={CompanyNavbarData} pathname={pathname}>
                 <div className='all_path'>
+                <h1 className='top_heading'>Jobs Post</h1>
                     <MyTable tableData={Table} />
-
                 </div>
             </CustomLayout>
         </div>

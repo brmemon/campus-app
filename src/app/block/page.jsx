@@ -4,6 +4,7 @@ import CustomLayout from '../Components/Layout'
 import "./style.scss"
 import { AdminNavbarData, Table} from '../Helper/constant'
 import MyTable from '../Components/Table'
+import "../global.scss"
 
 const Unverified = () => {
   const [pathname, setPathname] = useState()
@@ -16,8 +17,8 @@ const Unverified = () => {
     <div>
       <CustomLayout SideNavbarData={AdminNavbarData} pathname={pathname}>
         <div className='all_path'>
+        <h1 className='top_heading'>Block</h1>
           <MyTable tableData={Table} />
-
         </div>
       </CustomLayout>
     </div>

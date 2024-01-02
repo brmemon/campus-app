@@ -8,7 +8,7 @@ import Input from '../Components/Input';
 import MainButton from '../Components/MainButton';
 import { AdminNavbarData } from '../Helper/constant';
 import Image from 'next/image';
-import avater from "../Components/Assets/profile2.png"
+import avater from "../Components/Assets/avater3png.png"
 
 const Profile = () => {
   const [pathname, setPathname] = useState()

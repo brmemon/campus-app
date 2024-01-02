@@ -5,24 +5,24 @@ import { FaRegHandshake } from 'react-icons/fa6';
 import '../Login/style.scss';
 import "../../../app/Global.scss"
 
-const LSF_Container = () => {
+const AuthContainer = () => {
   return (
     <div className="sub_container_one">
-      <Image
-        className='LSF_container'
+      {/* <Image
+        className='AuthContainer'
         priority={true}
         src={vector}
         alt="Login Image"
-      />
+      /> */}
       <span className="campus_logo_text">
         <FaRegHandshake className="campus_logo" />
         <h1 className="campus_text">Campus App</h1>
         <p className="campus_para">
-          "Connecting Dreams, Bridging Careers: Your Gateway to Opportunities!"
+          "Connecting Dreams, Bridging Careers Your Gateway to Opportunities!"
         </p>
       </span>
     </div>
   )
 }
 
-export default LSF_Container
+export default AuthContainer
